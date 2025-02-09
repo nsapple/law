@@ -1,416 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>The Law Office of Carlo A. Rolando</title>
-      <meta name="title" content="The Law Office of Carlo A. Rolando">
-      <meta name="description"
-         content="Carlo A. Rolando is an aggressive Bay Area litigator with a well-respected plaintiff's personal injury and general litigation practice.">
-      <meta name="robots" content="index, follow">
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-      <meta name="language" content="English">
-      <meta name="theme-color" content="#1f2771">
-      <meta name="google" content="notranslate" />
-      <link rel="canonical" href="index.html">
-      <link rel="alternate" hreflang="x-default" href="index.html">
-      <!-- Favicons -->
-      <link href="assets/favicon_io/favicon.ico" rel="icon">
-      <link href="assets/favicon_io/favicon-16x16.png" rel="favicon-16x16">
-      <link href="assets/favicon_io/favicon-32x32.png" rel="favicon-32x32">
-      <link href="assets/favicon_io/apple-touch-icon.png" rel="apple-touch-icon">
-      <link href="assets/favicon_io/android-chrome-192x192.png" rel="android-chrome-192x192">
-      <link href="assets/favicon_io/android-chrome-512x512.png" rel="android-chrome-512x512">
-      <!-- Google Fonts -->
-      <link rel="preconnect" href="https://fonts.googleapis.com/">
-      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
-      <!-- Vendor CSS Files -->
-      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-      <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-      <!-- Template Main CSS File -->
-      <link rel="stylesheet" href="assets/css/style.min.css">
-      <!-- Manifest JSON -->
-      <link rel="manifest" href="manifest.html">
-      <meta name="google-site-verification" content="sz3iv4kvy7D_3zzfuJ0n7caEZGZm44CEvMR79iLLJGQ" />
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQQ242BZ1D"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag() { dataLayer.push(arguments); }
-         gtag('js', new Date());
-         
-         gtag('config', 'G-EQQ242BZ1D');
-      </script>
-      <!-- Animation CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-      <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-      <style>
-         html,
-         body {
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
-         font-family: Arial, sans-serif;
-         background-color: #f3f4f6;
-         }
-         .cursor-dot,
-         .cursor-dot-outline {
-         pointer-events: none;
-         position: fixed;
-         z-index: 9999;
-         border-radius: 50%;
-         transform: translate(-50%, -50%);
-         }
-         .cursor-dot {
-         width: 8px;
-         height: 8px;
-         background-color: hsl(234, 57%, 28%);
-         }
-         .cursor-dot-outline {
-         width: 25px;
-         height: 25px;
-         background-color: transparent;
-         border: 0.5px solid hsl(234, 57%, 28%);
-         }
-         @media (max-width: 768px) {
-         .cursor-dot,
-         .cursor-dot-outline {
-         display: none;
-         }
-         }
-                 body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .popup-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-        }
-        .popup-content {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            position: relative;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .popup-content h1 {
-            margin: 0 0 10px;
-        }
-        .close-btn {
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            width: 30px;
-            height: 30px;
-            background: white;
-            border: 2px solid #000;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 16px;
-            cursor: pointer;
-            font-weight: bold;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            transition: background 0.3s ease;
-        }
-        .close-btn:hover {
-            background: #f0f0f0;
-        }
-      </style>
-   </head>
- 
-<div class="popup-overlay" id="popup">
-    <div class="popup-content">
-        <button class="close-btn" onclick="closePopup()">&times;</button>
-        <h1>Happy Birthday, Dad!</h1>
-    </div>
-</div>
+  <head>
+    <title>The Law Office of Carlo A. Rolando</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Global Styles */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        padding: 0;
+        color: #1f2771;
+        background-color: #f9f9f9;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
 
-<script>
-    function closePopup() {
-        document.getElementById('popup').style.display = 'none';
-    }
-</script>
-   <body>
-      <div id="preloader" class="animate__animated animate__fadeIn"></div>
-      <a href="#" class="back-to-top d-flex align-items-center justify-content-center animate__animated animate__fadeIn"><i
-         class="bi bi-arrow-up-short"></i></a>
-      <!-- ======= Header ======= -->
-      <header id="header" class="fixed-top animate__animated animate__slideInDown">
-         <div class="container d-flex align-items-center">
-            <h1 class="logo me-auto mb-0">
-               <a href="#hero" class="logo me-auto scrollto"><img src="assets/images/png/logo.png" alt="logo"
-                  class="img-fluid animate__animated animate__zoomIn"></a>
-            </h1>
-            <nav id="navbar" class="navbar order-last order-lg-0">
-               <ul id="mobile_menu">
-                  <li class="d-flex d-sm-none mobile-nav-close">
-                     <i class="bi bi-x-lg"></i>
-                  </li>
-                  <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                  <li><a class="nav-link scrollto" href="#about">Firm Profile</a></li>
-                  <li><a class="nav-link scrollto" href="#services">Personal Injury</a></li>
-                  <li><a class="nav-link scrollto" href="#ourteam">Attorney Profile</a></li>
-               </ul>
-            </nav>
-            <!--.navbar -->
-            <a href="#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span>
-            Appointment</a>
-            <i class="bi bi-list mobile-nav-toggle d-flex d-xl-none"></i>
-         </div>
-      </header>
-      <!-- End Header -->
-      <!-- ======= Hero Section ======= -->
-      <section id="hero" class="d-flex align-items-lg-center">
-         <div class="container">
-            <div class="row d-flex align-items-center">
-               <div class="col-sm-6">
-                  <h1>The Law Office of Carlo A. Rolando</h1>
-                  <h2>Aggressive Bay Area litigator with a well-respected plaintiff's personal injury and general litigation practice.</h2>
-                  <a href="#about" class="btn-get-started scrollto d-lg-flex d-none animate__animated animate__pulse">Know More</a>
-               </div>
-               <div class="col-sm-6 d-lg-none d-flex flex-column align-items-center">
-                  <img src="assets/images/png/Osvaldo.png" alt="Carlo Rolando" class="img-fluid img-thumbnail rounded animate__animated animate__fadeInUp" />
-                  <a href="#about" class="btn-get-started scrollto animate__animated animate__pulse">Know More</a>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- End Hero -->
-      <main id="main">
-         <!-- ======= About Section ======= -->
-         <section id="about" class="about">
-            <div class="container-fluid">
-               <div class="row">
-                  <div
-                     class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
-                     <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4 animate__animated animate__zoomIn"></a>
-                  </div>
-                  <div
-                     class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-                     <div class="section-title">
-                        <h2><span>About Carlo A. Rolando</span></h2>
-                        <p>Carlo A. Rolando is an aggressive Bay Area litigator with a well-respected plaintiff's personal injury and general litigation practice.
-                           Mr. Rolando's personal injury practice represents individuals and their families in wrongful death and personal injury cases stemming from motor vehicle negligence, product liability, premises liability, and construction accidents. 
-                           Mr. Rolando provides his clients with exceptional legal representation and attentiveness. Every client is provided with Mr. Rolando's direct number, and knows that each letter, meeting, interrogatory, deposition, and court appearance receives his personal attention, skill, and patience with the goal of achieving the best possible legal result.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- End About Section -->
-         <!-- ======= Services Section ======= -->
-         <section id="services" class="services">
-            <div class="container">
-               <div class="section-title text-center">
-                  <h2><span>Personal Injury Practice</span></h2>
-                  <p>Personal injury and wrongful death cases involve complex laws, confusing procedural requirements, and astronomical litigation costs. Carlo A. Rolando has successfully fought against some of the largest and most powerful corporations, municipalities, and insurance groups in the Country.</p>
-               </div>
-               <div class="row">
-                  <div class="col-12">
-                     <ul>
-                        <li>
-                           <div class="card">
-                              <div class="card-body">
-                                 <h5><b>Animal Bites</b></h5>
-                              </div>
-                           </div>
-                        </li>
-                        <li>
-                           <div class="card">
-                              <div class="card-body">
-                                 <h5><b>Bicycle Accidents</b></h5>
-                              </div>
-                           </div>
-                        </li>
-                        <li>
-                           <div class="card">
-                              <div class="card-body">
-                                 <h5><b>Car Accidents</b></h5>
-                              </div>
-                           </div>
-                        </li>
-                        <li>
-                           <div class="card">
-                              <div class="card-body">
-                                 <h5><b>Medical Malpractice</b></h5>
-                              </div>
-                           </div>
-                        </li>
-                        <li>
-                           <div class="card">
-                              <div class="card-body">
-                                 <h5><b>Pedestrian Accidents</b></h5>
-                              </div>
-                           </div>
-                        </li>
-                        <li>
-                           <div class="card">
-                              <div class="card-body">
-                                 <h5><b>Premises Liability</b></h5>
-                              </div>
-                           </div>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- End Services Section -->
-         <!-- ======= Ourteam Section ======= -->
-         <section id="ourteam" class="ourteam">
-         <div class="container">
-         <div class="section-title text-center">
-            <h2><span>Attorney Profile</span></h2>
-         </div>
-         <div class="row">
-         <div class="col-12">
-         <div class="card">
-         <div class="card-body">
-         <div class="row align-items-center py-4">
-         <div class="col-sm-4 text-center">
-            <img src="assets/images/jpg/team-1.jpg" alt="Attorney Carlo A. Rolando"
-               class="img-fluid img-thumbnail rounded-circle mb-3" style="width: 300px" />
-         </div>
-         <div class="col-sm-8 pe-sm-5">
-         <h4><b>Attorney Carlo A. Rolando</b></h4>
-         <p class="mt-4"><b>A Bay Area native, Mr. Rolando graduated magna cum laude from Saint Mary's College of California before moving to Indiana to attend law school at the University of Notre Dame. In law school, Mr. Rolando excelled in written and oral advocacy and was selected by faculty members to represent Notre Dame at the American Bar Association's National Appellate Advocacy Competition.</p>
-         <p>Following graduation, Mr. Rolando earned recognition as law clerk to the Chief Judge of Michigan's 43rd Judicial Circuit Court. His experience and commitment to excellence have been recognized by various legal associations, including The American Bar Association.</p>
-         <p>Mr. Rolando has spent years fighting America's largest insurance companies and has obtained millions of dollars for injured persons.</p>
-         <!-- ======= Contact Section ======= -->
-         <section id="contact" class="contact">
-            <div class="container">
-               <div class="section-title text-center">
-                  <h2><span>Get in Touch</span></h2>
-               </div>
-               <div class="row mt-5">
-                  <div class="col-lg-6">
-                     <div class="info">
-                        <div class="address">
-                           <i class="bi bi-geo-alt"></i>
-                           <h4>Location:</h4>
-                           <p>1225 Alpine Rd Ste 201, Walnut Creek,</p>
-                           <p>California, 94596</p>
-                        </div>
-                        <div class="email">
-                           <i class="bi bi-envelope"></i>
-                           <h4>Email:</h4>
-                           <p>
-                              <a href="mailto:carlo@rolandolaw.com">carlo@rolandolaw.com</a>
-                           </p>
-                        </div>
-                        <div class="phone">
-                           <i class="bi bi-phone"></i>
-                           <h4>Call:</h4>
-                           <p>
-                              <a href="tel:5109218508">510-921-8508</a>
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-6 mt-5 mt-lg-0 mb-5">
-                     <form id="contact-form" onsubmit="sendSMS(event)" class="shadow p-4 rounded">
-                        <div class="form-group mb-3">
-                           <label for="subject" class="form-label">Name:</label>
-                           <input type="text" class="form-control" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group mb-3">
-                           <label for="phone_number" class="form-label">Phone Number:</label>
-                           <input type="text" class="form-control" id="phone_number" name="phone_number" required>
-                        </div>
-                        <div class="form-group mb-3">
-                           <label for="message" class="form-label">Message:</label>
-                           <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="background-color: rgb(31, 39, 113); color: #fff;">Send Message</button>
-                     </form>
-                  </div>
-               </div>
-            </div>
-            <div class="row mt-5">
-               <div class="col-lg-12">
-                  <iframe src="https://www.google.com/maps/embed?pb=!4v1716520974089!6m8!1m7!1s62C-Yzt1YboAZzkoC_006A!2m2!1d37.89584339202246!2d-122.0662253522395!3f253.48706!4f0!5f0.7820865974627469" width="100%"height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-               </div>
-            </div>
-         </section>
-         <!-- End Contact Section -->
-         <!-- ======= Footer ======= -->
-         <footer id="footer">
-            <div class="container d-md-flex py-4">
-               <div class="me-md-auto text-center text-md-start">
-                  <div class="copyright">
-                     &copy; Copyright <strong><span>Carlo A. Rolando Law Office</span></strong>. All Rights Reserved 2024. Website designed by nsapple.
-                     </span>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </footer>
-      </main>
-      <div class="cursor-dot-outline"></div>
-      <div class="cursor-dot"></div>
-      <script>
-         var cursor = {
-             delay: 8,
-             _x: 0,
-             _y: 0,
-             endX: (window.innerWidth / 2),
-             endY: (window.innerHeight / 2),
-             cursorVisible: true,
-             cursorEnlarged: false,
-             $dot: document.querySelector('.cursor-dot'),
-             $outline: document.querySelector('.cursor-dot-outline'),
-             init: function() {
-                 this.setupEventListeners();
-                 this.animateDotOutline();
-             },
-             setupEventListeners: function() {
-                 var self = this;
-                 document.addEventListener('mousemove', function(e) {
-                     self.endX = e.clientX;
-                     self.endY = e.clientY;
-                     self.$dot.style.top = self.endY + 'px';
-                     self.$dot.style.left = self.endX + 'px';
-                 });
-             },
-             animateDotOutline: function() {
-                 var self = this;
-                 self._x += (self.endX - self._x) / self.delay;
-                 self._y += (self.endY - self._y) / self.delay;
-                 self.$outline.style.top = self._y + 'px';
-                 self.$outline.style.left = self._x + 'px';
-                 requestAnimationFrame(this.animateDotOutline.bind(self));
-             }
-         };
-         cursor.init();
-         
-         document.addEventListener('click', function(event) {
-             confetti({
-                 particleCount: 100,
-                 spread: 60,
-                 origin: {
-                     x: event.clientX / window.innerWidth,
-                     y: event.clientY / window.innerHeight
-                 },
-             });
-         });
-      </script>
-   </body>
+      /* Navbar */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1f2771;
+        color: white;
+        padding: 15px 20px;
+        position: relative;
+      }
+      .navbar img {
+        width: 100px;
+        height: auto;
+      }
+      .nav-menu {
+        display: flex;
+        gap: 20px;
+      }
+      .nav-menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+      }
+      .nav-menu a:hover {
+        text-decoration: underline;
+      }
+      .hamburger {
+        display: none;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+      .mobile-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #1f2771;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+      }
+      .mobile-menu a {
+        padding: 10px 20px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      @media (max-width: 768px) {
+        .nav-menu {
+          display: none;
+        }
+        .hamburger {
+          display: block;
+        }
+        .mobile-menu {
+          display: none;
+        }
+        .mobile-menu.active {
+          display: flex;
+        }
+      }
+
+      /* Hero Section */
+      #hero {
+        background-color: #1f2771;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+      }
+      #hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+      #hero h2 {
+        font-size: 1.2rem;
+        margin-top: 0;
+      }
+
+      /* Sections */
+      section {
+        padding: 40px 20px;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+      }
+      .text-box {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      /* Services */
+      .services-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      .services-text,
+      .services-image {
+        flex: 1 1 300px;
+        max-width: 400px;
+      }
+      .bullet-container {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        background-color: #f0f4f8;
+        border-radius: 10px;
+      }
+      .bullet-item {
+        background: #1f2771;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 1rem;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      @media (max-width: 768px) {
+        .bullet-container {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Attorney Profile */
+      .attorney-profile-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+      }
+      .attorney-profile-container img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        border: 3px solid #1f2771;
+        flex-shrink: 0;
+      }
+      .attorney-profile-container div {
+        flex: 1;
+      }
+
+      /* Contact Section */
+      #contact {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+      }
+      #contact h2 {
+        font-size: 1.8rem;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+      #contact p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
+      #contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      #contact-form label {
+        font-weight: bold;
+        text-align: left;
+      }
+      #contact-form input,
+      #contact-form textarea,
+      #contact-form button {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #1f2771;
+        font-size: 1rem;
+      }
+      #contact-form button {
+        background-color: #1f2771;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      #contact-form button:hover {
+        background-color: #15306a;
+      }
+
+      /* Map Section */
+      .mapouter {
+        text-align: center;
+        padding: 20px;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #1f2771;
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+
+      /* Media Queries */
+      @media (max-width: 768px) {
+        .navbar {
+          flex-wrap: wrap;
+        }
+        .services-container {
+          flex-direction: column;
+          align-items: center;
+        }
+        .attorney-profile-container {
+          flex-direction: column;
+          text-align: center;
+        }
+        #contact {
+          text-align: center;
+        }
+        #contact h2 {
+          text-align: center;
+        }
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.querySelector(".hamburger");
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const navLinks = document.querySelectorAll(".mobile-menu a");
+
+        // Initialize EmailJS
+        emailjs.init("rLZrxdQ8pcOLb9riP"); // Replace with your actual User ID
+
+        // Toggle navigation menu on mobile
+        hamburger.addEventListener("click", () => {
+          mobileMenu.classList.toggle("active");
+          hamburger.innerHTML = mobileMenu.classList.contains("active") ? "&#10005;" : "&#9776;";
+        });
+
+        // Smooth scrolling for nav links
+        navLinks.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 50,
+                behavior: "smooth",
+              });
+            }
+            mobileMenu.classList.remove("active");
+            hamburger.innerHTML = "&#9776;";
+          });
+        });
+
+        // EmailJS form submission
+        document.getElementById("contact-form")?.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const templateParams = {
+            from_name: document.getElementById("name").value,
+            from_email: document.getElementById("email").value,
+            phone: document.getElementById("phone").value,
+            message: document.getElementById("message").value,
+          };
+
+          emailjs.send("service_udweqhu", "template_m0uudhm", templateParams)
+            .then(
+              function (response) {
+                console.log("SUCCESS!", response.status, response.text);
+                alert("Message sent successfully!");
+              },
+              function (error) {
+                console.log("FAILED...", error);
+                alert("Failed to send message. Please try again.");
+              }
+            );
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <img src="https://raw.githubusercontent.com/nsapple/images/refs/heads/main/R%20(1).png" alt="Logo" />
+      <button class="hamburger">☰</button>
+      <nav class="nav-menu">
+        <a href="#about" class="nav-link">Firm Profile</a>
+        <a href="#services" class="nav-link">Personal Injury</a>
+        <a href="#ourteam" class="nav-link">Attorney Profile</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <nav class="mobile-menu">
+        <a href="#about" class="nav-link">Firm Profile</a>
+        <a href="#services" class="nav-link">Personal Injury</a>
+        <a href="#ourteam" class="nav-link">Attorney Profile</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <h1>Rolando Law</h1>
+      <h2>The Law Office of Carlo A. Rolando</h2>
+      <h2>Aggressive Bay Area litigator with a well-respected plaintiff's personal injury and general litigation practice.</h2>
+    </section>
+
+    <!-- Firm Profile Section -->
+    <section id="about">
+      <h2>Firm Profile</h2>
+      <div class="text-box">
+        <p>
+          Carlo A. Rolando is an aggressive Bay Area litigator with a well-respected plaintiff’s personal injury and general litigation practice. He represents individuals and their families in wrongful death and personal injury cases arising from motor vehicle negligence, product liability, premises liability, and construction accidents.
+        </p>
+      </div>
+    </section>
+
+    <!-- Personal Injury Section -->
+    <section id="services">
+      <h2>Personal Injury Practice</h2>
+      <div class="services-container">
+        <div class="services-text">
+          <p>
+            Personal injury and wrongful death cases involve complex laws, confusing procedural requirements, and astronomical litigation costs. Carlo A. Rolando has successfully fought against some of the largest and most powerful entities.
+          </p>
+        </div>
+        <div class="services-image">
+          <img src="https://raw.githubusercontent.com/nsapple/images/refs/heads/main/gettyimages-969500140-612x612.jpg" alt="Personal Injury" />
+        </div>
+      </div>
+      <div class="bullet-container">
+        <div class="bullet-item">Animal Bites</div>
+        <div class="bullet-item">Bicycle Accidents</div>
+        <div class="bullet-item">Car Accidents</div>
+        <div class="bullet-item">Pedestrian Accidents</div>
+        <div class="bullet-item">Wrongful Death</div>
+        <div class="bullet-item">Medical Malpractice</div>
+      </div>
+    </section>
+
+    <!-- Attorney Profile Section -->
+    <section id="ourteam">
+      <h2>Attorney Profile</h2>
+      <div class="attorney-profile-container">
+        <img src="https://raw.githubusercontent.com/nsapple/images/refs/heads/main/1516496681438.jfif" alt="Attorney Profile" />
+        <div>
+          <p>
+            Carlo A. Rolando received his legal education at the University of Notre Dame and was trained by one of Michigan’s most respected trial judges. Accordingly, he has the extensive academic and practical experience necessary to represent clients with a broad range of legal issues.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Make an Appointment</h2>
+      <p><strong>Address:</strong> 123 Main Street, San Francisco, CA 94105</p>
+      <p><strong>Phone:</strong> (555) 123-4567</p>
+      <p><strong>Email:</strong> contact@rolandolaw.com</p>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" name="phone" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Map Section -->
+    <section class="mapouter">
+      <iframe
+        width="600"
+        height="450"
+        style="border:0"
+        loading="lazy"
+        allowfullscreen
+        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJVTPokywQkFQRmtVEaUZlJRA&key=YOUR_API_KEY">
+      </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 The Law Office of Carlo A. Rolando. All Rights Reserved.</p>
+    </footer>
+  </body>
 </html>
